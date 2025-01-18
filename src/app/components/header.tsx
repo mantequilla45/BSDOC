@@ -6,28 +6,28 @@ const Header = () => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setScrolled(true); // Change background when scrolled
-        } else {
-          setScrolled(false); // Reset background when at the top
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolled(true); // Change background when scrolled
+            } else {
+                setScrolled(false); // Reset background when at the top
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
-  
+
     return (
-      <header
-        className={`text-[#222726] py-5 px-[5%] z-50 fixed top-0 left-0 right-0 transition duration-300 ${
-          scrolled ? "bg-black/70" : "bg-transparent"
-        }`}
-      >
+        <header
+            className={`text-[#222726] py-5 px-[5%] z-50 fixed top-0 left-0 right-0 transition duration-300 ${scrolled ? "bg-black/70" : "bg-transparent"
+                }`}
+        >
             <title>BSDOC</title>
+            {/* eslint-disable-next-line @next/next/no-page-custom-font */}
             <link
                 href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500;700;900&display=swap"
                 rel="stylesheet"

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
