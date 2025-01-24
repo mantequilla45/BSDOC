@@ -1,6 +1,7 @@
 import React from 'react';
 import { AlertOctagon } from 'lucide-react';
 import Header from '@/app/components/layout/header'
+import Link from 'next/link'
 const NotFound: React.FC = () => {
 
   return (
@@ -17,12 +18,12 @@ const NotFound: React.FC = () => {
         <p className="text-gray-200 font-light mb-6">
           The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
         </p>
-        <a 
+        <Link 
         href="/"
           className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-300"
         >
           Return to Home
-        </a>
+        </Link>
       </div>
     </div>
   );
