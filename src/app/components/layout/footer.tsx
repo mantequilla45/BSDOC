@@ -18,13 +18,16 @@ const Footer = () => {
           BOOK
         </a>
       </div>
+      <a href="/about-us" className=" my-10">
+        About Us
+      </a>
       <div className="flex flex-row gap-5 text-white">
-        <FaFacebook className="w-[30px] h-[30px]"/>
-        <FaGithub className="w-[30px] h-[30px]"/>
+        <FaFacebook className="w-[30px] h-[30px]" />
+        <FaGithub className="w-[30px] h-[30px]" />
       </div>
 
       <p className="font-light mt-5">
-      Disclaimer: This service is for informational purposes only. Consult a doctor for persistent or worsening symptoms.
+        Disclaimer: This service is for informational purposes only. Consult a doctor for persistent or worsening symptoms.
       </p>
     </footer>
   );
