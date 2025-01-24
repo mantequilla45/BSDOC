@@ -14,7 +14,7 @@ const OurServicesSection = () => {
                 alt="icon 1"
                 width={300}
                 height={300}
-                objectFit="cover"
+                style={{ objectFit: 'cover' }}
                 quality={100}
               />
             </div>
@@ -32,7 +32,7 @@ const OurServicesSection = () => {
                 alt="icon 2"
                 width={300}
                 height={300}
-                objectFit="cover"
+                style={{ objectFit: 'cover' }}
                 quality={100}
               />
             </div>
@@ -50,7 +50,7 @@ const OurServicesSection = () => {
                 alt="icon 1"
                 width={300}
                 height={300}
-                objectFit="cover" // Ensures the image fills the space without distortion
+                style={{ objectFit: 'cover' }}
                 quality={100}
               />
             </div>

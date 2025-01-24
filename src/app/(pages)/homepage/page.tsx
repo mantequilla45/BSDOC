@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "@/app/components/homepage/herosection"
 import OurServicesSection from "@/app/components/homepage/ourservices"
 const HomePage = () => {
