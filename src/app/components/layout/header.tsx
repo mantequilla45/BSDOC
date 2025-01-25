@@ -6,7 +6,6 @@ import AuthModal from "@/app/components/modals/userAuth";
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
-    const [isSignupOpen, setIsSignupOpen] = useState(false);
     const [pathname, setPathname] = useState("");
 
     useEffect(() => {
@@ -49,13 +48,7 @@ const Header = () => {
                         onClick={() => setIsLoginOpen(true)}
                         className="py-3 px-8 bg-white rounded-full border border-[#222726] cursor-pointer active:scale-[.95] hover:scale-[.98] transition duration-200"
                     >
-                        Login
-                    </div>
-                    <div
-                        onClick={() => setIsSignupOpen(true)}
-                        className="py-3 px-8 bg-white rounded-full border border-[#222726] cursor-pointer active:scale-[.95] hover:scale-[.98] transition duration-200"
-                    >
-                        Signup
+                        Sign in
                     </div>
                 </ul>
             </nav>
@@ -65,14 +58,6 @@ const Header = () => {
                     isOpen={isLoginOpen}
                     onClose={() => setIsLoginOpen(false)}
                     initialTab="login"
-                />
-            </AnimatePresence>
-
-            <AnimatePresence>
-                <AuthModal
-                    isOpen={isSignupOpen}
-                    onClose={() => setIsSignupOpen(false)}
-                    initialTab="signup"
                 />
             </AnimatePresence>
         </header>

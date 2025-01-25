@@ -14,8 +14,6 @@ const SearchSymptomsPage = () => {
             <title>Search Symptoms</title>
             <Image
                 alt="Search Page"
-                loading="lazy"
-                decoding="async"
                 style={{
                     position: 'absolute',
                     height: '80%',
@@ -30,8 +28,6 @@ const SearchSymptomsPage = () => {
             />
             <Image
             alt="Search Page"
-            loading="lazy"
-            decoding="async"
             style={{
                 position: 'absolute',
                 height: '70%',
@@ -52,7 +48,7 @@ const SearchSymptomsPage = () => {
                     <p className="pl-7">Advanced Search</p>
                     <button
                         onClick={() => setIsAdvancedSearchEnabled(!isAdvancedSearchEnabled)}
-                        className={`w-12 h-6 rounded-full transition duration-300 border-[#777777] border-[1px] ${isAdvancedSearchEnabled ? 'bg-blue-500 border-[#3B77E5]' : 'bg-gray-300 border-[#777777]'} relative`}
+                        className={`w-12 h-6 rounded-full transition duration-300 border-[1px] ${isAdvancedSearchEnabled ? 'bg-blue-500 border-blue-800' : 'bg-gray-300 border-[#777777]'} relative`}
                     >
                         <span
                             className={`absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full transform transition-transform duration-300 ease-in-out
