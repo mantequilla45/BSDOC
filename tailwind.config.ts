@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
       },
+      textColor: {
+        DEFAULT: '#2D383D'
+      }
     },
   },
   plugins: [],

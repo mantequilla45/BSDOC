@@ -19,3 +19,7 @@ body {
   background: var(--background);
   font-family: 'Rubik', sans-serif;
 }
+
+body, p, div, span {
+  color: #2D383D;
+}
