@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#04276A] via-[#093181] to-[#0D3A90] py-16 px-[10%] flex flex-col">
+    <footer className="bg-gradient-to-b from-[#018487] to-[#014C4E] py-16 px-[10%] flex flex-col">
       <div className="flex flex-col gap-6">
         <h3 className="text-5xl text-white font-bold">
           Not a common ailment?
